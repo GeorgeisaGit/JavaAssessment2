@@ -53,7 +53,7 @@ public class Assessment {
 				if(word.contentEquals(lookFor)) {
 				
 			}
-		}
+		}      
 		
 		
 		
@@ -111,7 +111,16 @@ public class Assessment {
 	// nMid("Chocolate", 1) ==> "Choclate"
 
 	public String nMid(String input, int a) {
-		return "";
+		
+		String Beg;
+		String End;
+		String Result;
+		
+		Beg=input.substring(0, input.length()/2-a/2);
+		End=input.substring(input.length()/2+a/2+1,input.length());
+		Result = Beg+End;
+		
+		return Result;
 	}
 
 	// Given a string, return the length of the largest "block" in the string.
